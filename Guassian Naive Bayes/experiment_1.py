@@ -92,7 +92,7 @@ def stats(accuracy):
 
 def plot_accuracy(accuracy):
     plt.figure()
-    accuracy.plot.hist(bins=30, alpha=0.5)
+    accuracy.plot.hist(bins=np.arange(.35, 1.1, .01), alpha=0.5)
     plt.show()
 
 
